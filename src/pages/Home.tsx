@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-navy opacity-50" aria-hidden="true" />
         <span className="star-watermark absolute -right-24 top-24 h-80 w-80" aria-hidden="true" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-32 pt-[178px] sm:px-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:px-8 lg:pb-28">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-16 pt-[178px] sm:px-6 sm:pb-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:px-8 lg:pb-28">
           {/* left — message */}
           <div>
             <Reveal>

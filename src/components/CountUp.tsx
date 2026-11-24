@@ -2,8 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 /**
  * Animated number counter, triggered when it scrolls into view.
- * `suffix`/`prefix` keep semantics ("12+", "24/7", "100%") simple: with static
- * special values (like "24/7") use `static` instead of counting.
+ * Defaults to the final value so the number is always readable —
+ * the count-up is a pure enhancement.
+ * Use `static` for values like "24/7" that don't count.
  */
 export default function CountUp({
   to,
@@ -21,45 +22,43 @@ export default function CountUp({
   static?: string;
 }) {
   const ref = useRef<HTMLSpanElement | null>(null);
-  const [started, setStarted] = useState(false);
-  const [value, setValue] = useState(staticValue ? 0 : 0);
+  const final = staticValue ?? String(to ?? 0);
+  const [value, setValue] = useState(final);
 
   useEffect(() => {
     const el = ref.current;
-    if (!el) return;
+    if (!el || staticValue || to === undefined) return;
+    if (typeof IntersectionObserver === "undefined") return; // keep final value
+
+    let raf = 0;
     const observer = new IntersectionObserver(
       (entries) => {
         for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setStarted(true);
-            observer.disconnect();
-          }
+          if (!entry.isIntersecting) continue;
+          observer.disconnect();
+          const start = performance.now();
+          const tick = (now: number) => {
+            const p = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - p, 3);
+            setValue(String(Math.round(eased * to)));
+            if (p < 1) raf = requestAnimationFrame(tick);
+          };
+          raf = requestAnimationFrame(tick);
         }
       },
       { threshold: 0.4 }
     );
     observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  useEffect(() => {
-    if (!started || staticValue || to === undefined) return;
-    const start = performance.now();
-    let raf = 0;
-    const tick = (now: number) => {
-      const p = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      setValue(Math.round(eased * to));
-      if (p < 1) raf = requestAnimationFrame(tick);
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(raf);
     };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, [started, staticValue, to, duration]);
+  }, [staticValue, to, duration]);
 
   return (
     <span ref={ref} className={className}>
       {prefix}
-      {staticValue ?? value}
+      {value}
       {!staticValue && suffix}
     </span>
   );
