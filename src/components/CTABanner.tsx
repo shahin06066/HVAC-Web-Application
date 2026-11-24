@@ -16,7 +16,7 @@ export default function CTABanner({
 }) {
   return (
     <section className={amber ? "bg-brand-400" : "bg-navy-900"}>
-      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-6 pt-10 sm:px-6 sm:py-14 lg:px-8">
         <Reveal>
           <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
             <div className="max-w-2xl">

@@ -15,7 +15,7 @@ export default function PageHero({
   crumbs: { label: string; path?: string }[];
 }) {
   return (
-    <section className="relative overflow-hidden bg-navy-900 pt-[188px] pb-14 sm:pb-20">
+    <section className="relative overflow-hidden bg-navy-900 pb-14 pt-[112px] sm:pb-20 sm:pt-[188px]">
       {/* backdrop */}
       <div className="absolute inset-0 bg-grid-navy opacity-60" aria-hidden="true" />
       <div

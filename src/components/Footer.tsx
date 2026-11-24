@@ -5,7 +5,7 @@ import { business, navLinks } from "@/lib/site";
 export default function Footer() {
   return (
     <footer className="bg-navy-950 text-navy-100">
-      <div className="mx-auto max-w-7xl px-4 pb-32 pt-10 sm:px-6 sm:pt-14 md:pb-16 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 pb-[calc(6rem_+_env(safe-area-inset-bottom))] pt-8 sm:px-6 sm:pt-14 md:pb-16 lg:px-8">
         <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           {/* brand */}
           <div>

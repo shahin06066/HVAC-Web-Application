@@ -96,7 +96,7 @@ export default function Services() {
       </PageHero>
 
       {/* ============ HVAC ============ */}
-      <section className="bg-cream-50 py-20 sm:py-24" aria-labelledby="hvac-heading">
+      <section className="bg-cream-50 py-14 sm:py-24" aria-labelledby="hvac-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <Reveal>
@@ -158,7 +158,7 @@ export default function Services() {
       </section>
 
       {/* ============ PLUMBING ============ */}
-      <section className="bg-white py-20 sm:py-24" aria-labelledby="plumbing-heading">
+      <section className="bg-white py-14 sm:py-24" aria-labelledby="plumbing-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div>
@@ -209,7 +209,7 @@ export default function Services() {
       </section>
 
       {/* ============ COMFORT CLUB ============ */}
-      <section className="bg-cream-50 pb-20 pt-4 sm:pb-24" aria-labelledby="club-heading">
+      <section className="bg-cream-50 pb-14 pt-4 sm:pb-24" aria-labelledby="club-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="relative overflow-hidden rounded-3xl bg-navy-900 shadow-lift">

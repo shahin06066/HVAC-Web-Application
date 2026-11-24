@@ -196,7 +196,7 @@ export default function Contact() {
         </a>
       </PageHero>
 
-      <section className="bg-cream-50 py-20 sm:py-24" aria-labelledby="contact-heading">
+      <section className="bg-cream-50 py-14 sm:py-24" aria-labelledby="contact-heading">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-12 lg:px-8">
           {/* form card */}
           <Reveal>
@@ -292,7 +292,7 @@ export default function Contact() {
       </section>
 
       {/* final thin CTA */}
-      <section className="bg-navy-900 py-12 sm:py-14" aria-label="Emergency callout">
+      <section className="bg-navy-900 pb-6 pt-12 sm:py-14" aria-label="Emergency callout">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-4 text-center sm:px-6 lg:flex-row lg:text-left">
           <div className="flex items-center gap-4">
             <Stars size={20} className="hidden sm:inline-flex" />

@@ -54,7 +54,7 @@ export default function About() {
       </PageHero>
 
       {/* ============ OUR STORY ============ */}
-      <section id="our-story" className="bg-cream-50 py-20 sm:py-24" aria-labelledby="story-heading">
+      <section id="our-story" className="bg-cream-50 py-14 sm:py-24" aria-labelledby="story-heading">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8">
           <Reveal>
             <p className="text-xs font-extrabold uppercase tracking-[0.3em] text-brand-600">Our Story</p>
@@ -108,7 +108,7 @@ export default function About() {
       </section>
 
       {/* ============ CORE VALUES ============ */}
-      <section className="bg-white py-20 sm:py-24" aria-labelledby="values-heading">
+      <section className="bg-white py-14 sm:py-24" aria-labelledby="values-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <Reveal>
@@ -139,7 +139,7 @@ export default function About() {
       </section>
 
       {/* ============ BY THE NUMBERS ============ */}
-      <section className="relative overflow-hidden bg-navy-900 py-20 sm:py-20" aria-label="Lone Star Comfort by the numbers">
+      <section className="relative overflow-hidden bg-navy-900 py-14 sm:py-20" aria-label="Lone Star Comfort by the numbers">
         <div className="absolute inset-0 bg-grid-navy opacity-40" aria-hidden="true" />
         <div className="absolute -left-32 -bottom-32 h-80 w-80 rounded-full bg-brand-400/12 blur-3xl" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -159,7 +159,7 @@ export default function About() {
       </section>
 
       {/* ============ MEET OUR TEAM ============ */}
-      <section id="meet-our-team" className="scroll-mt-28 bg-cream-50 py-20 sm:py-24" aria-labelledby="team-heading">
+      <section id="meet-our-team" className="scroll-mt-28 bg-cream-50 py-14 sm:py-24" aria-labelledby="team-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-2">
             <div className="relative order-2 lg:order-1">

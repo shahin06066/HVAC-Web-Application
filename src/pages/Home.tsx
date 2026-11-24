@@ -59,7 +59,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-navy opacity-50" aria-hidden="true" />
         <span className="star-watermark absolute -right-24 top-24 h-80 w-80" aria-hidden="true" />
 
-        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-16 pt-[178px] sm:px-6 sm:pb-20 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:px-8 lg:pb-28">
+        <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-12 pt-[112px] sm:px-6 sm:pb-20 sm:pt-[178px] lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:px-8 lg:pb-28">
           {/* left — message */}
           <div>
             <Reveal>
@@ -172,7 +172,7 @@ export default function Home() {
       </section>
 
       {/* ============ SERVICES ============ */}
-      <section className="bg-cream-50 py-20 sm:py-24" aria-labelledby="services-heading">
+      <section className="bg-cream-50 py-14 sm:py-24" aria-labelledby="services-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
             <Reveal>
@@ -221,7 +221,7 @@ export default function Home() {
       </section>
 
       {/* ============ WHY CHOOSE US ============ */}
-      <section className="relative overflow-hidden bg-navy-900 py-20 sm:py-24" aria-labelledby="why-heading">
+      <section className="relative overflow-hidden bg-navy-900 py-14 sm:py-24" aria-labelledby="why-heading">
         <div className="absolute inset-0 bg-grid-navy opacity-40" aria-hidden="true" />
         <div className="absolute -left-40 top-1/2 h-[30rem] w-[30rem] -translate-y-1/2 rounded-full bg-brand-400/10 blur-3xl" aria-hidden="true" />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -251,7 +251,7 @@ export default function Home() {
       </section>
 
       {/* ============ CUSTOMER REVIEWS ============ */}
-      <section className="bg-cream-50 py-20 sm:py-24" aria-labelledby="reviews-heading">
+      <section className="bg-cream-50 py-14 sm:py-24" aria-labelledby="reviews-heading">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
             <Reveal>
